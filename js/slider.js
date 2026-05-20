@@ -1,2 +1,25 @@
-// slider.js
-// Swiper 플러그인 커스터마이징 및 초기화 스크립트
+const heroSwiper = new Swiper(".heroSwiper", {
+
+    loop: true,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+});
+
+const collectionSwiper = new Swiper(".collectionSwiper", {
+
+    slidesPerView: "auto",
+
+    spaceBetween: 32,
+
+    grabCursor: true,
+
+});
