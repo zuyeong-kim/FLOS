@@ -97,9 +97,9 @@ body{
 }
 
 /* 정기구독 */
-
-.subscription-wrap{
-   gap:120px;
+.subscription-container{
+   margin-left: 160px;
+   margin-right: 160px;
 }
 
 .subscription-card-wrap{
@@ -145,6 +145,79 @@ body{
    width: 100%;
    height: 40%;
    background: var(--color-primary);
-   
 
+}
+
+/* 플랜 */
+
+/* 카드 */
+.plan-card{
+  max-width: 405px;
+  height: 575px;
+  background: #fff;
+  border: 1px solid #111;
+  border-radius: 24px;
+}
+
+/* 뱃지 */
+.plan-badge{
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #CADE6C;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 아이콘 */
+.plan-icon{
+  width: 36px;
+  height: 36px;
+}
+
+/* 가격 */
+.plan-price{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.plan-subtitle{
+  font-size: 16px;
+  color: #111
+}
+
+/* 라인 */
+.plan-line{
+  width: 100%;
+  height: 1px;
+  background: #111;
+}
+
+/* 포함사항 */
+.plan-label{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plan-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 18px;
+  color: #111;
+}
+
+/* 리스트 도트 색 */
+.plan-list li::marker{
+  color: #CADE6C;
+}
+
+/* 버튼 */
+.plan-btn{
+  border-radius: 999px;
+  background: #CADE6C;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px;
 }
