@@ -8,11 +8,8 @@
 ## ✨ Overview
 
 FLOS는 꽃을 단순한 상품이 아닌
-
 “감정과 일상을 연결하는 경험”으로 재해석한 브랜드 웹 프로젝트입니다.
-
 사용자가 상황과 감정에 맞는 꽃을 자연스럽게 선택할 수 있도록
-
 감성적인 UI/UX 흐름을 중심으로 설계했습니다.
 
 ---
@@ -82,7 +79,7 @@ FLOS는 꽃을 단순한 상품이 아닌
     │   └── slider.js
     ├── .gitignore
     ├── index.html
-    └── readmd.md
+    └── README.md
 ```
 
 ---
@@ -115,4 +112,31 @@ FLOS는 꽃을 단순한 상품이 아닌
 ---
 
 ## 🔗 Link
+
 - Figma: [FLOS Web Project](https://www.figma.com/design/QOfXRRwE7aznC0TWgZg0nG/FLOS?node-id=39-86&t=MAEFdmePLZSDPdW8-1)
+
+---
+
+## 📌 Git Convention
+
+### Commit Message
+
+- feat : 새로운 기능 추가
+- fix : 버그 수정
+- style : 코드 스타일 변경 (기능 변경 없음)
+- refactor : 코드 리팩토링
+- design : UI / 디자인 변경
+- docs : 문서 수정 (README 등)
+- chore : 기타 작업 (빌드 설정, 패키지 등)
+
+### Versioning
+
+- MAJOR.MINOR.PATCH (예: 1.0.0)
+
+- MAJOR: 큰 구조 변경
+- MINOR: 기능 추가
+- PATCH: 버그 및 오류 수정
+
+
+
+

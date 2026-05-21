@@ -98,8 +98,11 @@ body{
 
 /* 정기구독 */
 
+.subscription-wrap{
+   gap:120px;
+}
+
 .subscription-card-wrap{
-   
    gap: 21px;
 }
 
@@ -123,4 +126,25 @@ body{
    font-size:20px;
    font-weight: 400;
    margin-top: 22px;
+}
+
+.subscription-02 img{
+   width: 600px;
+}
+
+#subscription{
+   padding-top: 150px;
+   padding-bottom: 200px;
+}
+
+#subscription:before{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 40%;
+   background: var(--color-primary);
+   
+
 }
