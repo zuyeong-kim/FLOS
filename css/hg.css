@@ -94,3 +94,18 @@
     background-color: #CADE6C; /* 시안의 연두색 계열 배경색 (피그마 컬러코드로 바꾸면 베스트!) */
     margin-bottom: 20px;
 }
+
+
+@media (max-width:991px) {
+  header .logowrap{
+    width: auto !important;
+  }
+  header a{
+    font-size: clamp(13px, 3vw, 16px) !important;
+  }
+  footer svg{
+    width:clamp(80px, 30vw, 150px)
+  }
+ 
+  
+}

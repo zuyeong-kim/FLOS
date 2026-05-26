@@ -72,10 +72,10 @@
 }
 
 :root {
-    --color-primary: #cadc6c;
-    --color-secondary: #4a90e2;
+    --color-primary: #CADE6C;
+    --color-secondary: #E9F1C1;
     --color-background: #f5f5f5;
-    --color-text: #333333;
+    --color-text: #000000;
     --main-font:"Pretendard"
   
 }
@@ -87,10 +87,37 @@ body, ul, li, div, p, a, h1, h2, h3, h4, h5 {
   font-family: var(--main-font);
   font-weight: 400;
 }
+
 .FLOSfont{font-family: 'SlowGothic' !important;}
 
-.section-title-wrap{
-    text-align:center;
+
+.fw-100 { font-weight: 100 !important; }
+.fw-200 { font-weight: 200  !important; }
+.fw-300 { font-weight: 300  !important; }
+.fw-400 { font-weight: 400  !important; }
+.fw-500 { font-weight: 500  !important; }
+.fw-600 { font-weight: 600  !important; }
+.fw-700 { font-weight: 700  !important; }
+.fw-800 { font-weight: 800  !important; }
+.fw-900 { font-weight: 900  !important; }
+
+.fs-14 { font-size: 14px !important ; }
+.fs-16 { font-size: 16px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-22 { font-size: 22px !important; }
+.fs-24 { font-size: 24px !important; }
+.fs-30 { font-size: 30px !important; }
+.fs-36 { font-size: 36px !important; }
+.fs-40 { font-size: 40px !important; }
+.fs-42 { font-size: 42px !important; }
+.fs-48 { font-size: 48px !important; }
+
+.w-0{
+    width:0 !important;
+}
+.zup{
+    z-index: 1000000 !important;
 }
 
 .section-label{
@@ -109,6 +136,8 @@ body, ul, li, div, p, a, h1, h2, h3, h4, h5 {
     font-size:24px;
     font-weight:400;
 }
+
 .text-flos{
     color: var(--color-primary) !important
 }
+

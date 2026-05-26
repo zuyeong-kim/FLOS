@@ -1,17 +1,33 @@
-body{
-    overflow-x:hidden;
+/* 네비게이션 */
+.navbar-brand svg{
+    height:32px;
+    aspect-ratio:128 / 52;
+    fill:none;
 }
 
-/* 네비게이션 */
-@media (min-width: 992px) {
-  .navbar-nav {
-    margin: 0 auto;
-  }
-}
 
 /* 히어로 */
 .swiper-pagination-bullet-active {
-  background: #CADE6C; /* 원하는 포인트 색 */
+  background: var(--color-primary); /* 원하는 포인트 색 */
+}
+
+
+.hero-slide-01{
+  background:url('/assets/images/hero/pc_banner01.jpg');
+  background-position:center;
+  background-size:cover;
+}
+
+.hero-slide-02{
+  background:url('/assets/images/hero/pc_banner02.jpg');
+  background-position:center;
+  background-size:cover;
+}
+
+.hero-slide-03{
+  background:url('/assets/images/hero/pc_banner03.jpg');
+  background-position:center;
+  background-size:cover;
 }
 
 /* 스토어 */
@@ -30,25 +46,24 @@ body{
 
 .collection-card{
    width:500px;
-    height:740px;
+  height:740px;
 
-    border-radius:20px;
+    /* border-radius:20px; */
 
-    overflow:hidden;
-
-    position:relative;
+    /* overflow:hidden; */
+    /* position:relative; */
 }
 
 .collection-card img{
-   width:100%;
-   height:100%;
-   object-fit:cover;
+    /* width:100%; */
+    /* height:100%;  */
+    /* object-fit:cover;  */
 }
 
 .collection-text{
-    position:absolute;
-    left:30px;
-    bottom:30px;
+    /* position:absolute; */
+    left:30px; 
+     bottom:30px;
 }
 
 .collection-text * {
@@ -56,49 +71,50 @@ body{
 }
 
 .collection-label{
-   font-size:20px;
-   font-weight: 600;
+   /* font-size:20px; */
+   /* font-weight: 600; */
 }
 
 .collection-title{
-   font-size:42px;
-   font-weight: 700;
-   margin-top: 8px;
+   /* font-size:42px; */
+   /* font-weight: 700; */
+   /* margin-top: 8px; */
 }
+
 .collection-desc{
-   font-size:21px;
-   font-weight: 400;
+   /* font-size:20px; */
+   /* font-weight: 400; */
 }
 
 .collectionSwiper{
    padding:0 160px;
    margin-bottom: 162px;
 
-   overflow:visible;
+   /* overflow:visible; */
 
 }
 
 /* 플로우  */
 .flow-wrap{
-   width:100%;
-   overflow:hidden;
+   /* width:100%; */
+   /* overflow:hidden; */
 }
 
 .flow-track{
-   display: flex;
+   /* display: flex; */
    width:max-content;
-   flex-wrap: nowrap;
+   /* flex-wrap: nowrap; */
    gap: 300px;
 }
 
 .flow-item{
-   display: flex;
-   align-items:center;
+   /* display: flex; */
+   /* align-items:center; */
    gap: 333px;
 }
 
 .flow-item img{
-  flex-shrink:0;
+  /* flex-shrink:0; */
 }
 
 .flow-item img:nth-child(odd){
@@ -112,7 +128,6 @@ body{
 /* 정기구독 */
 .subscription-container{
    margin-left: 160px;
-   margin-right: 160px;
 }
 
 .subscription-card-wrap{
@@ -121,28 +136,29 @@ body{
 
 .subscription-card{
    width: 425px;
-   height: 200px;
-   background: #ffffff;
-   border: 1px solid #111111;
-   border-radius: 20px;
+   height: 185px;
+   /* background: #ffffff; */
+    border: 1px solid #111111;
+   /* border-radius: 20px; */
    padding: 40px 30px;
 }
 
 .subscription-title{
-   font-size:24px;
-   font-weight: 700;
+   /* font-size:24px; */
+   /* font-weight: 700; */
    padding-bottom: 22px;
    border-bottom: 1px solid #111111;
 }
 
 .subscription-desc{
-   font-size:20px;
-   font-weight: 400;
-   margin-top: 22px;
+   /* font-size:20px; */
+   /* font-weight: 400; */
+   margin-top: 14px;
 }
 
-.subscription-02 img{
-   width: 600px;
+.flower-img{
+  width:85%;
+  padding-right: 240px;
 }
 
 #subscription{
@@ -156,99 +172,107 @@ body{
    bottom: 0;
    left: 0;
    width: 100%;
-   height: 40%;
-   background: #E9F1C1;
+   height: 35%;
+   background: var(--color-secondary);
 
 }
 
 /* 플랜 */
 .plan-card-wrap{
    margin-bottom: 180px;
-  display: flex;
+  /* display: flex; */
   gap: 24px;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
 }
 
 /* 카드 */
 .plan-card{
   max-width: 405px;
   height: 575px;
-  background: #fff;
+  /* background: #fff; */
   border: 1px solid #111;
-  border-radius: 24px;
+  /* border-radius: 24px; */
 }
 
 /* 뱃지 */
 .plan-badge{
-  display: inline-block;
+  /* display: inline-block; */
   padding: 3px 12px;
-  border-radius: 999px;
-  background: #CADE6C;
-  font-size: 16px;
-  font-weight: 700;
+  /* border-radius: 999px; */
+  background: var(--color-primary);
+  /* font-size: 16px; */
+  /* font-weight: 700; */
 }
 
 /* 아이콘 */
-.plan-icon{
+.badge-icon img{
   width: 36px;
   height: 36px;
 }
 
 /* 가격 */
 .plan-price{
-  font-size: 36px;
-  font-weight: 700;
+  /* font-size: 36px; */
+  /* font-weight: 700; */
   line-height: 1.2;
 }
 
 .plan-subtitle{
-  font-size: 16px;
-  color: #111
+  /* font-size: 16px; */
+  /* color: #111 */
 }
 
 /* 라인 */
 .plan-line{
-  width: 100%;
-  height: 1px;
-  background: #111;
+  margin-bottom: 32px;
+  /* width: 100%; */
+  /* height: 1px; */
+  /* background: #111; */
 }
 
 /* 포함사항 */
 .plan-label{
-  font-size: 16px;
-  font-weight: 600;
+  /* font-size: 16px; */
+  /* font-weight: 600; */
 }
 
 .plan-list{
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   gap: 14px;
-  font-size: 18px;
-  color: #111;
+  /* font-size: 18px; */
+  /* color: #111; */
 }
 
 /* 리스트 도트 색 */
 .plan-list li::marker{
-  color: #CADE6C;
+  color: var(--color-primary);
 }
 
 /* 버튼 */
 .plan-btn{
-  border-radius: 999px;
-  background: #CADE6C;
-  font-size: 16px;
-  font-weight: 700;
+  /* border-radius: 999px; */
+  background: var(--color-primary);
+  /* font-size: 16px; */
+  /* font-weight: 700; */
   padding: 14px;
 }
 
+/* 기본 호버 액션 제거 */
 .plan-btn:hover{
-  background: #c8d95b;
-  border: none;
+    background-color: var(--color-primary);
+    color: #000000;
+}
+
+.plan-btn:hover,
+.plan-btn:focus,
+.plan-btn:active{
+    box-shadow: none !important;
 }
 
 #plan {
-  position: relative;
+  /* position: relative; */
   background: linear-gradient(
     to bottom,
     #E9F1C1 0%,
@@ -259,19 +283,21 @@ body{
 
   padding: 170px 0 180px;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .wave {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   bottom: 55%;
-
-  width: 100%;
+  /* width: 100%; */
   line-height: 0;
 }
 
 .wave img {
-  width: 100%;
-  display: block;
+  /* width: 100%; */
+  /* display: block; */
 }
+
+
+
