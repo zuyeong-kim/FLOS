@@ -201,20 +201,19 @@
     top: 20px;
   }
 }
-/* FAQ 타이틀 및 서체 세팅 */
-.faq-section {
-  font-family: 'Pretendard', sans-serif !important;
+
+/* FAQ 섹션 테두리 블랙 고정 스타일 */
+.faq-section .faq-item {
+  border: 1px solid #000000 !important; /* 선을 블랙으로 변경 */
+  transition: box-shadow 0.2s ease;     /* 부드러운 반응 효과 */
 }
 
-/* 개별 질문 박스 커스텀 호버 이펙트 */
-.faq-item {
-  transition: all 0.25s ease-in-out;
-  border-color: #e0e0e0 !important;
+/* 마우스를 올려도(롤오버) 선 색상 변경 없이 블랙 유지 */
+.faq-section .faq-item:hover {
+  border-color: #000000 !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.08) !important;
 }
-.faq-item:hover {
-  border-color: #9ccc65 !important; /* 마우스 올렸을 때 브랜드 연그린 빛 테두리 효과 */
-  transform: translateY(-2px); /* 부드럽게 살짝 떠오르는 느낌 */
-}
+
 
 /* 질문과 답변 서체 크기 밸런스 */
 .faq-question {
@@ -267,3 +266,4 @@
 .w-logo-white {
     filter: brightness(0) invert(1) !important;
 }
+
