@@ -1,0 +1,21 @@
+$font-sizes: 14, 16, 18, 20, 22, 24, 30, 36, 40, 42, 48;
+
+// 1. Font Weight 반복문 (100부터 900까지 100씩 증가)
+@for $i from 1 through 9 {
+  .fw-#{$i * 100} {
+    font-weight: $i * 100 !important;
+  }
+}
+
+@for $size from 14 through 58 {
+  .fs-#{$size} {
+    font-size: #{$size}px !important;
+  }
+}
+
+// 10부터 50까지 1씩 증가 (1.0, 1.1, 1.2 ... 5.0 대응)
+@for $i from 10 through 50 {
+  .lh-#{$i} {
+    line-height: $i / 10 !important;
+  }
+}

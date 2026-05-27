@@ -37,11 +37,12 @@
   <link rel="stylesheet" href="/css/common.css" />
   
   <link rel="stylesheet" href="/css/jy.css" />
-  <link rel="stylesheet" href="/css/es.css"/>
-  <link rel="stylesheet" href="/css/hg.css"/>
+  <link rel="stylesheet" href="/css/es.min.css"/>
+  <link rel="stylesheet" href="/css/hg.min.css"/>
+
 </head>
 <body class="overflow-x-hidden">
-  <a class="skip-link" href="#main-content">본문 바로가기</a>
+  <a class="skip-link visually-hidden" href="#main-content">본문 바로가기</a>
 
    <!-- 화면에 공간을 차지하지 않도록 display: none 처리합니다 -->
     <svg class="d-none">
@@ -60,6 +61,9 @@
                 </clipPath>
             </defs>
         </symbol>
+        <symbol id="flowerbg" viewBox="0 0 390 424" fill="none" >
+            <path d="M118.233 59.2695C139.001 -19.0893 250.088 -19.0893 270.855 59.2695H270.856L274.471 72.8184L274.601 73.3037L275.085 73.1719L288.623 69.4883C366.795 48.3142 422.372 144.58 364.901 201.698L364.9 201.699L354.977 211.63L354.623 211.983L354.977 212.337L364.9 222.268L364.901 222.269C422.308 279.389 366.793 375.718 288.623 354.479L275.085 350.796L274.601 350.664L274.471 351.149L270.856 364.697L270.855 364.698C250.088 443.057 139.001 443.057 118.233 364.698V364.697L114.618 351.149L114.489 350.664L114.004 350.796L100.466 354.479C22.2938 375.652 -33.2826 279.387 24.1875 222.269L24.1895 222.268L34.1133 212.337L34.4658 211.983L34.1133 211.63L24.1895 201.699L24.1885 201.698L23.5205 201.027C-32.7844 143.827 22.6015 48.3325 100.466 69.4883L114.004 73.1719L114.489 73.3037L114.618 72.8184L118.233 59.2695Z" fill="currentColor" stroke="black"/>
+        </symbol>
     </svg>
 
   <header class="fixed-top bg-white border-bottom header-custom">
@@ -72,6 +76,7 @@
                 <svg class="text-dark">
                     <use href="#common-flos-logo"></use>
                 </svg>
+                
             </a>
           </div>
             
@@ -353,13 +358,21 @@
       </div>
     </section>
 
-    <section>
-        <div class="banner_img">
-            <img src="/assets/images/widebanner/pc_banner.jpg" alt="아틀리에 소개 배너" class="pc_banner">
+    <section id="widebanner">
+        <div class="banner_img position-relative">           
+            <div class="maxWidth position-absolute top-0 bottom-0 start-0 end-0 mx-auto px-5 pb-5 mb-4">
+                <div class=" h-100 d-flex gap-3 flex-column justify-content-end mb-5 pb-5">
+                    <h2 class="FLOSfont text-white">꽃을 만드는 사람들의 이야기</h2>
+                    <p class="FLOSsubfont fw400 text-white">
+                        다양한 감각을 가진 플로리스트를 만나보고, 당신의 취향에 맞는 꽃을 선택해보세요. <br>
+                        또는, 당신의 작업을 선보이고 새로운 기회를 만들어보세요.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="atelier">
+    <section class="atelier position-relative d-flex  flex-column align-items-center justify-content-center sectionpy zup">
         <img src="/assets/images/ui/symbol.svg" class="bg-symbol svg-left" alt="배경 그래픽 1">
          <img src="/assets/images/ui/symbol.svg" class="bg-symbol svg-right" alt="배경 그래픽 2">
 
@@ -369,8 +382,9 @@
                     <h1>세상에 하나뿐인 꽃</h1>
                     <h2>당신의 마음을 꽃으로 표현하는 방법</h2>
                 </div>
+                
                 <div class="hg-card-container d-flex justify-content-between align-items-stretch mx-auto" style="max-width: 1330px; gap: 80px; margin-top: 80px; padding: 0px;">
-
+                  
                     <article class="hg-step-card">
                         <span class="badge-step badge-explore">탐색</span>
                         <h3>취향에 맞는 꽃을 발견하세요</h3>
@@ -394,9 +408,92 @@
 
                 </div>
             </div>
-        </div>
+
+            <div class="atelier2 sectionpy" id="apply_process">
+              <div class="hg-card-container  " >
+                <div class="card-wrapper ">
+                  <div class = "section-title-wrap text-center">
+                      <p class="section-label">스토어</p>
+                      <h2 class="section-title">봄 꽃 컬렉션</h2>
+                      <p class="section-desc">따뜻한 계절을 맞이하는 신선한 꽃들의 모음입니다.</p>
+                  </div>
+                  <div class="hg-card-container d-flex justify-content-between align-items-stretch " >
+                    <div class="card-item col-4  d-flex  flex-column  justify-content-center   align-items-center   text-center position-relative">
+                      
+                      <div class="flowercontent">
+                        <img src="./assets/images/atelier/sprout.svg" alt="꽃 아이콘" class="atelier-icon">
+                        <h3 class="card-title mt-0">작품 판매 기회</h3>
+                        <p class="card-desc">꽃 구독 플랫폼을 통해<br>정기적인 판매 기회를 얻습니다.</p>
+                      </div>
+                    </div>
+                    
+
+                    <div class="card-item d-flex col-4  flex-column  justify-content-center   align-items-center   text-center position-relative">
+                        
+                        <div class="flowercontent">
+                          <img src="./assets/images/atelier/seed.svg" alt="꽃 아이콘" class="atelier-icon">
+                          <h3 class="card-title mt-0">포트폴리오 노출</h3>
+                          <p class="card-desc">당신의 작품이 더 많은 사람들에게<br>보여질 수 있습니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-item d-flex col-4 flex-column  justify-content-center   align-items-center   text-center position-relative">
+                        
+                        <div class="flowercontent">
+                          <img src="./assets/images/atelier/mini_flower.svg" alt="꽃 아이콘" class="atelier-icon">
+                          <h3 class="card-title mt-0">커스텀 제작 의뢰</h3>
+                          <p class="card-desc">고객의 특별한 요청에<br>응할 수 있는 기회를 얻습니다.</p>
+                        </div>                 
+                    </div>
+                  </div>
+                </div>
+            </div>
+        
     </section>
-      <section class="process-section position-relative overflow-hidden mx-auto bg-white">
+
+    <div class="sectionpy position-relative" id="partnership">
+      
+      <div class="section-title-wrap text-center position-relative">
+                        <p class="section-label">스토어</p>
+                        <h2 class="section-title">봄 꽃 컬렉션</h2>
+                        <p class="section-desc">따뜻한 계절을 맞이하는 신선한 꽃들의 모음입니다.</p>
+      </div>
+      <div class="partnership-card-container position-relative"> 
+        
+        <div class="partnership-card">
+          <div class="partnership-icon-circle">
+            <img src="./assets/images/cooperation/cooperation01.svg" alt="SVG 아이콘" class="partnership-svg">
+          </div>
+          <div class="partnership-text-group">
+            <h3 class="partnership-title">브랜드 콜라보</h3>
+            <p class="partnership-desc">꽃으로 브랜드의 이야기를 만듭니다.</p>
+          </div>
+        </div>
+
+        <div class="partnership-card">
+          <div class="partnership-icon-circle">
+            <img src="/assets/images/cooperation/cooperation02.svg" alt="SVG 아이콘" class="partnership-svg">
+          </div>
+          <div class="partnership-text-group">
+            <h3 class="partnership-title">기업 구독 서비스</h3>
+            <p class="partnership-desc">관리 걱정 없이, 항상 완성된 공간을 유지하세요.</p>
+          </div>
+        </div>
+
+        <div class="partnership-card">
+          <div class="partnership-icon-circle">
+            <img src="./assets/images/cooperation/cooperation03.svg" alt="SVG 아이콘" class="partnership-svg">
+          </div>
+          <div class="partnership-text-group">
+            <h3 class="partnership-title">이벤트와 프로모션 협업</h3>
+            <p class="partnership-desc">플로스와 협업하여 브랜드의 가치를 확장하세요.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+<section class="process-section position-relative overflow-hidden mx-auto">
   <div class="container position-relative z-2">
     
     <div class="text-center header-group mb-5">
@@ -581,7 +678,7 @@
         <div class="col-12 offset-md-1">
           <div class=" d-block">
             <svg class="text-white">
-                      <use href="#common-flos-logo"></use>
+                <use href="#common-flos-logo"></use>
             </svg>
             <!-- <img src="/assets/images/footerlogo.svg" alt="FLOS" style="max-width: 180px;"> -->
           </div>

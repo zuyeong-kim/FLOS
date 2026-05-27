@@ -1,0 +1,280 @@
+
+.atelier{  
+    
+    background: linear-gradient(180deg, #FFF 0%, #F5FBD9 100%);    
+     
+    min-height: 700px;    
+    
+   
+    h1{
+      font-family: 'Pretendard';
+      font-size: 48px;
+      font-weight: 700;
+      color: #000000;    
+    }
+    h3{
+     font-family: 'Pretendard';
+     font-size: 24px;
+     font-weight: 700;
+     color: #000000;    
+    }
+    
+    .bg-symbol{        
+        width: 439px;
+        height: 439px;
+        opacity: 0.42;
+        z-index: 0;
+        pointer-events: none; /* 마우스 클릭 방해 금지 */
+      }
+
+    .svg-left {
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        transform: rotate(-75deg);
+        left: 50px;}
+
+    .svg-right {
+        position: absolute;
+        bottom: -80px;
+        right: 50px;
+        transform: rotate(-31.439deg);}
+}
+
+
+
+
+
+
+
+
+    /* 카드 전체 공통 디자인 */
+.hg-step-card {
+    flex: 1; /* 카드 3개가 가로폭을 1:1:1로 똑같이 나누어 가짐 */
+    width: 390px;
+    height: 360px;
+    background-color: #ffffff;
+    border: 1px solid #000000; /* 검은색 가는 선 테두리 */
+    border-radius: 20px;       /* 피그마의 둥근 모서리 */
+    padding: 100px 24px ;        /* 카드 안쪽 여백 */
+    text-align: left;          /* 왼쪽 정렬 */
+    z-index: 2
+   }
+
+.badge-step {
+    display: inline-block;
+    padding: 3px 14px;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    border-radius: 100px; /* 완전 둥근 알약 모양 */
+    background-color: #CADE6C; /* 시안의 연두색 계열 배경색 (피그마 컬러코드로 바꾸면 베스트!) */
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:991px) {
+  header{
+    .logowrap{
+    width: auto !important;
+    }
+    a{
+      font-size: clamp(13px, 3vw, 16px) !important;
+    }
+
+  } 
+  
+  footer{
+    svg{
+    width:clamp(80px, 30vw, 150px)
+  }
+  } 
+ 
+  
+}
+#widebanner{
+  h2{
+    font-size: 102px;
+  }
+  p{
+      font-size: 28px;
+  }
+} 
+
+
+.card-wrapper {  
+  gap: 30px; 
+
+  .card-title {
+         /* 위쪽 마진 초기화 (선택사항) */
+    margin-bottom: 32px;   /* 아래 p 태그와의 간격을 32px로 지정 */
+  }
+}
+
+
+
+
+.atelier-icon{
+     margin-top: 0;         /* 위쪽 마진 초기화 (선택사항) */
+  margin-bottom: 45px;   /* 아래 p 태그와의 간격을 32px로 지정 */
+}
+
+/* 전체 카드를 감싸는 바구니 */
+.partnership-card-container{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  
+  flex-wrap: nowrap; /* 💡 요걸로 바꿔주면 단 1~2px 모자란 것 때문에 밑으로 떨어지는 걸 막아줍니다! */
+  
+  width: 100%;
+  padding: 0 160px;
+  box-sizing: border-box;}
+
+/* 개별 카드 스타일 */
+.partnership-card {
+  width: 512px;  /* 💡 가로 512px */
+  height: 472px; /* 💡 세로 472px */
+  background: linear-gradient(to bottom,#E7F1B8, #CADE6C); /* 💡 요청하신 그라디언트 색상 */
+  border: 1px solid #000000; /* 그라데이션에 맞춘 자연스러운 테두리 색상 */
+  border-radius: 20px; /* 박스 크기에 맞춰 라운드 소폭 상향 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* 흰색 동그라미 아이콘 박스 */
+.partnership-icon-circle {
+  width: 135px;  /* 💡 SVG 크기에 맞춘 동그라미 가로 */
+  height: 135px; /* 💡 SVG 크기에 맞춘 동그라미 세로 */
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px; /* 여백도 시원하게 조정 */
+}
+
+/* 동그라미 안의 SVG 이미지 크기 설정 */
+.partnership-svg {
+  width: 135px;  /* 동그라미(135px) 안에서 알맞게 배치되도록 조정된 내부 아이콘 크기 */
+  height: 135px;
+  object-fit: contain;
+}
+
+/* 글자 묶음 div */
+.partnership-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 제목 스타일 */
+.partnership-title {
+  margin: 0;
+  font-size: 26px; /* 박스가 커진 만큼 폰트 크기 키움 */
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+/* 설명문 스타일 */
+.partnership-desc {
+  margin: 0;
+  font-size: 16px; /* 박스가 커진 만큼 폰트 크기 키움 */
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  line-height: 1.5;
+}
+.atelier2 .bg-symbol{
+  width: 389px;
+  height: 424px;
+  
+  /* 복잡한 50% 정중앙 계산 빼고, 그냥 카드 왼쪽 위 구석에 딱 붙여서 꽉 채웁니다 */
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  
+  z-index: 1 !important;   /* 맨 밑바닥 레이어 */
+  object-fit: contain !important;
+
+}
+
+
+#store{
+  .collection-card {
+     &:before{
+       content: "";
+       position: absolute;
+       left:0;
+       width: 100%;
+       height:100%;
+       top:0;
+     
+      /* 기본 배경색 (그라디언트 미지원 브라우저 백업용) */
+      background-color: rgba(0,0,0,0.5); 
+      
+      /* 위(transparent, 투명)에서 아래(rgba, 반투명 검은색)로 흐르는 그라디언트 */
+      background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+
+
+     }
+  }
+}
+
+#widebanner{
+  .banner_img{
+    background-image: url(/assets/images/widebanner/pc_banner_origin_.jpg);
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+  }
+}
+  
+
+#apply_process{
+
+  .card-item{
+    background-image: url("data:image/svg+xml,<svg width='390' height='424' viewBox='0 0 390 424' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M118.233 59.2695C139.001 -19.0893 250.088 -19.0893 270.855 59.2695H270.856L274.471 72.8184L274.601 73.3037L275.085 73.1719L288.623 69.4883C366.795 48.3142 422.372 144.58 364.901 201.698L364.9 201.699L354.977 211.63L354.623 211.983L354.977 212.337L364.9 222.268L364.901 222.269C422.308 279.389 366.793 375.718 288.623 354.479L275.085 350.796L274.601 350.664L274.471 351.149L270.856 364.697L270.855 364.698C250.088 443.057 139.001 443.057 118.233 364.698V364.697L114.618 351.149L114.489 350.664L114.004 350.796L100.466 354.479C22.2938 375.652 -33.2826 279.387 24.1875 222.269L24.1895 222.268L34.1133 212.337L34.4658 211.983L34.1133 211.63L24.1895 201.699L24.1885 201.698L23.5205 201.027C-32.7844 143.827 22.6015 48.3325 100.466 69.4883L114.004 73.1719L114.489 73.3037L114.618 72.8184L118.233 59.2695Z' fill='white' stroke='black'/></svg>"
+    );
+    background-position: center;
+    background-size: calc(100% - 20px);
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1.25;
+  }
+  
+}
+#partnership{
+  &:before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 100%;
+    left :0;
+    aspect-ratio: 1974 / 702;
+
+    background-position: center;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='676' viewBox='0 0 1920 676' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1947 -26H-27V500.64C-27 500.64 -26.4879 676 374 676C774.487 676 616.5 500.64 960 500.64C1303.5 500.64 1305.43 676 1578.5 676C1851.57 676 1947 500.64 1947 500.64V-26Z' fill='%23F5FBD9'/%3E%3C/svg%3E%0A");
+
+  }
+}
+
+body{
+.process-section{
+   .process-main-wrapper{
+    .bglogo{
+      transform: rotate(90deg) scale(2);
+      margin-right:-10vw;
+    }   
+
+   } 
+}
+}
