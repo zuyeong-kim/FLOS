@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /* --- 시작하는 방법 섹션 커스텀 스타일 --- */
 .process-section {
   padding: 120px 0;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
 }
 
-/* 우측 배경 데코
+/* 우측 배경 데코 */
 .bg-deco {
   top: 60px;
   right: 0;
@@ -13,21 +12,23 @@
   height: auto;
   z-index: 1;
   pointer-events: none;
-}*/
+}
+
 .header-group {
   margin-bottom: 80px;
 }
 
-/* .small-tag { */
-/* font-size: 14px; */
-/* letter-spacing: 2px; */
-/* color: #888888 !important; */
-/* } */
+.small-tag {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #888888 !important;
+}
+
 /* 통짜 배경 SVG가 들어가는 전체 컨테이너 세팅 (1920 해상도 최적화 폭) */
 .process-bg-container {
   max-width: 1140px;
   height: 280px;
-  background-image: url("images-process-3stepbg.svg");
+  background-image: url('images-process-3stepbg.svg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +49,7 @@
 }
 
 /* 아이콘 랩 크기 지정 */
-/*.icon-wrap {
+.icon-wrap {
   width: 44px;
   height: 44px;
   display: flex;
@@ -59,7 +60,8 @@
 .icon-wrap img {
   width: 100%;
   height: auto;
-} */
+}
+
 /* 단일 SVG 아이콘 파일을 배경색에 따라 다르게 표현하기 위한 CSS 필터 효과 */
 .icon-white {
   filter: brightness(0) invert(1); /* 완전히 하얀색으로 변환 */
@@ -79,60 +81,82 @@
   font-size: 15.5px;
   line-height: 1.5;
 }
+.process-section .process-main-wrapper .bglogo{
+    transform: rotate(-90deg) scale(2);
+    z-index: 1;
+   
 
+}
+/* 부모 래퍼 기준점 설정 */
 .process-section .process-main-wrapper {
-  max-width: 1116px;
-}
-.process-section .process-main-wrapper .bglogo {
-  transform: rotate(-90deg) scale(2);
-  z-index: 1;
-  right: -60px; /* 우측으로 살짝 튀어나오게 배치 */
-  /* 최신 이미지처럼 상단 타이틀 바로 아래(연두색 박스 윗선보다 살짝 위)에 강제 고정 */
-  top: -85px;
-  transform: none; /* 브라우저 크기에 따라 위치가 위아래로 유동치지 않게 만듭니다 */
-  /* z-index: 1;         연두색 카드 배경 뒤로 배치 */
-  pointer-events: none;
-  /* 최신 이미지의 은은한 그레이 색상 유지 필터 */
-  filter: grayscale(100%) brightness(1.4);
-}
-.process-section .process-main-wrapper .bg-step {
-  /* width: 100%; */
-  aspect-ratio: 1303/355;
-  /* position: relative; */
-  /* z-index: 2; */
-  background-image: url("/assets/images/process/3stepbg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    position: relative;
+    width: 100%;
+    max-width: 1116px;
+    margin: 0 auto;
 }
 
-.icon-box-w {
-  filter: brightness(0) invert(1);
+/* 부모 메인 래퍼 기준점 */
+.process-section .process-main-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1116px;
+    margin: 0 auto;
+}
+
+/* 3단계 연두색 배경 이미지 영역 */
+.process-section .process-main-wrapper .bg-step {
+    width: 100%;
+    aspect-ratio: 1303 / 355;
+    position: relative;
+    z-index: 2;
+  
+    background-image: url('../assets/images/process/3stepbg.svg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* [위치 및 색상 고정 완료] */
+.process-main-wrapper .bglogo {
+    position: absolute;
+    right: -60px;       /* 우측으로 살짝 튀어나오게 배치 */
+    
+    /* 최신 이미지처럼 상단 타이틀 바로 아래(연두색 박스 윗선보다 살짝 위)에 강제 고정 */
+    top: -85px;         
+    transform: none;    /* 브라우저 크기에 따라 위치가 위아래로 유동치지 않게 만듭니다 */
+    
+    z-index: 1;         /* 연두색 카드 배경 뒤로 배치 */
+    pointer-events: none;
+    
+    /* 최신 이미지의 은은한 그레이 색상 유지 필터 */
+    filter: grayscale(100%) brightness(1.4); 
+    opacity: 0.25;      
 }
 
 /* SVG 크기 고정 */
 .process-main-wrapper .bglogo svg {
-  width: 280px;
-  /* height: auto; */
+    width: 280px; 
+    height: auto;
 }
 
-/* HTML에서 두 요소를 감싸고 있는 부모 wrapper */
+   /* HTML에서 두 요소를 감싸고 있는 부모 wrapper */
 .process-section .process-main-wrapper {
-  /* position: relative; */
-  /* width: 100%; */
-  max-width: 1116px; /* 메인 박스와 크기를 똑같이 맞춰줍니다 */
-  /* margin: 0 auto;    부모 자체를 화면 중앙에 고정 */
+    position: relative;
+    width: 100%;
+    max-width: 1116px; /* 메인 박스와 크기를 똑같이 맞춰줍니다 */
+    margin: 0 auto;    /* 부모 자체를 화면 중앙에 고정 */
 }
 
 /* 우측 배경 로고 */
 .process-main-wrapper .bglogo {
-  /* position: absolute; */
-  right: -80px; /* 메인 박스 오른쪽 바깥으로 살짝 튀어나오게 조절 (원하시는 만큼) */
-  top: -60px;
-  transform: translateY(-50%); /* 세로축 정중앙 정렬 */
-  /* z-index: 1; 스텝 카드보다 뒤로 가도록 설정 */
-  pointer-events: none; /* 마우스 클릭 방해 금지 */
+    position: absolute;
+    right: -80px; /* 메인 박스 오른쪽 바깥으로 살짝 튀어나오게 조절 (원하시는 만큼) */
+    top: -60px;
+    transform: translateY(-50%); /* 세로축 정중앙 정렬 */
+    z-index: 1; /* 스텝 카드보다 뒤로 가도록 설정 */
+    pointer-events: none; /* 마우스 클릭 방해 금지 */
 }
+    
 
 .bglogo svg {
   /* 1. brightness(0)으로 만들면 원본이 무조건 완전한 검은색이 됩니다 */
@@ -145,6 +169,7 @@
   .process-section {
     padding: 80px 0;
   }
+  
   /* 모바일 환경에서는 통짜 가로형 배경을 해제하고 개별 타일형태로 전환 */
   .process-bg-container {
     max-width: 480px;
@@ -152,89 +177,70 @@
     background-image: none; /* 가로형 배경 숨김 */
     padding: 0 20px;
   }
-  /* .process-card {
+
+  .process-card {
     height: auto;
     padding: 45px 30px !important;
     margin-bottom: 24px;
     border-radius: 24px;
     text-align: center;
     align-items: center;
-  }*/
+  }
+  
   /* 모바일 개별 배경색 직접 부여 */
   .step-1, .step-3 {
-    background-color: var(--color-primary);
+    background-color: #CCE374;
   }
+  
   .step-2 {
-    background-color: var(--color-secondary);
+    background-color: #EFF6D6;
   }
+  
   .bg-deco {
     width: 180px;
     top: 20px;
   }
 }
-.faq-container {
-  max-width: 900px;
+
+/* FAQ 섹션 테두리 블랙 고정 스타일 */
+.faq-section .faq-item {
+  border: 1px solid #000000 !important; /* 선을 블랙으로 변경 */
+  transition: box-shadow 0.2s ease;     /* 부드러운 반응 효과 */
 }
 
-.faq-icon-box img {
-  width: 24px;
-  height: 24px;
+/* 마우스를 올려도(롤오버) 선 색상 변경 없이 블랙 유지 */
+.faq-section .faq-item:hover {
+  border-color: #000000 !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.08) !important;
 }
 
-/* FAQ 타이틀 및 서체 세팅 */
-.faq-section {
-  font-family: "Pretendard", sans-serif !important;
-}
-
-/* 개별 질문 박스 커스텀 호버 이펙트 */
-.faq-item {
-  transition: all 0.25s ease-in-out;
-  border-color: #e0e0e0 !important;
-}
-
-.faq-item:hover {
-  border-color: #9ccc65 !important; /* 마우스 올렸을 때 브랜드 연그린 빛 테두리 효과 */
-  transform: translateY(-2px); /* 부드럽게 살짝 떠오르는 느낌 */
-}
 
 /* 질문과 답변 서체 크기 밸런스 */
 .faq-question {
-  /* font-size: 18px; */
+  font-size: 18px;
   letter-spacing: -0.4px;
 }
-
 .faq-answer {
-  /* font-size: 14px; */
+  font-size: 14px;
   line-height: 1.6;
   letter-spacing: -0.3px;
 }
-
-.faq-text-title {
-  /* font-size: 24px; */
-  /* font-weight: 700; */
-}
-
-.faq-text-desc {
-  /* font-size: 14px; */
-  /* font-weight: 400; */
-}
-
 /* 푸터 메인 스타일 세팅 */
 .footer-section {
   background-color: #2e3029 !important; /* 시안 특유의 톤다운된 차콜 브라운 컬러 */
-  font-family: "Pretendard", sans-serif !important;
+  font-family: 'Pretendard', sans-serif !important;
 }
 
 /* 메뉴 대분류 타이틀 */
 .footer-title {
-  /* font-size: 16px; */
+  font-size: 16px;
   letter-spacing: -0.3px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 /* 소분류 링크 기본 스타일 */
 .footer-link {
-  /* font-size: 14px; */
+  font-size: 14px;
   color: #b0b3ab !important; /* 가독성을 고려한 은은한 애쉬그레이 톤 */
   text-decoration: none !important;
   letter-spacing: -0.3px;
@@ -247,8 +253,8 @@
 }
 
 /* 하단 로고 여백 확보 */
-/* .footer-logo-box { */
-/* display: inline-block; 
+.footer-logo-box {
+  display: inline-block;
 }
 .footer-logo-box #common-flos-logo path{
   fill: white;
@@ -259,4 +265,4 @@
 }
 .w-logo-white {
     filter: brightness(0) invert(1) !important;
-}*/
+}
